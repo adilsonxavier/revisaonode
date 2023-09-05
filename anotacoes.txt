@@ -1,0 +1,26 @@
+https://www.youtube.com/watch?v=Cdu0WJhI-d8
+
+npm install express
+ npm install mysql2
+ npm install nodemon -D
+ npm install dotenv
+
+ npx eslint --init
+ Irá fazer várias perguntas para configurar o eslint
+É criado o arquivo .eslintrc.json que pode ser modificado manualmente que refletirá no comportamento do eslint
+
+docker run --name mysqlImage -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 -d mysql
+-e => seta a variável de ambiente (MYSQL_ROOT_PASSWORD)
+-d => roda em modo "desatachado" (em ackground)
+
+BD
+===
+create table tasks(
+    id int primary key auto_increment,
+    title varchar(45) not null,
+    status varchar(45) not null,
+    created_at varchar(45) not null
+)
+ 
+
+ Model -> Controller ->
