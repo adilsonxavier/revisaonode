@@ -2,7 +2,7 @@ const tasksModel = require("../models/tasksModel")
 
 
 const getAll =  async (req, res) => {
-    
+    // alteração teste git
     const tasks =  await  tasksModel.getAll()
     return res.status(200).json(tasks);
 
