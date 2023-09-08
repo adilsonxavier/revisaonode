@@ -8,6 +8,12 @@ const getAll =  async (req, res) => {
 
 }
 
+const getTask= async(id)=>{
+    const query = "select * from tasks where id = ?"
+    const tasks = await connection.execute(query,[id]);
+    return tasks;
+}
+
 const createTask = async (req,res) => {
     const {title} = req.body;
     const createdTask = await tasksModel.createTask(req.body);
